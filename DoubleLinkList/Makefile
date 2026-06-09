@@ -1,11 +1,11 @@
-.DEFAULT_GOAL = res
+.DEFAULT_GOAL = DS_DLL
 %.o : %.c
 	gcc -c $^ -o $@
 	echo "很没毛"
 	@echo "有点没毛"
-res : test.o dll.o 
-	gcc -o res test.o dll.o
+DS_DLL : test.o dll.o 
+	gcc -o DS_DLL test.o dll.o
 .PHONY : clean
 clean:
-	-@rm -f res
+	-@rm -f DS_DLL
 	-@rm -f test.o dll.o

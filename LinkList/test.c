@@ -2,166 +2,166 @@
 #include <stdio.h>
 
 void test_init_and_print() {
-    printf("=== ²âÊÔ1: ³õÊ¼»¯ºÍ´òÓ¡ ===\n");
+    printf("=== æµ‹è¯•1: åˆå§‹åŒ–å’Œæ‰“å° ===\n");
     LinkList L = LinkList_init();
-    printf("¿ÕÁ´±í: ");
+    printf("ç©ºé“¾è¡¨: ");
     LinkList_print(L);
     LinkList_free(L);
     printf("\n");
 }
 
 void test_insert() {
-    printf("=== ²âÊÔ2: ²åÈë²Ù×÷£¨ÓĞĞò²åÈë£©===\n");
+    printf("=== æµ‹è¯•2: æ’å…¥æ“ä½œï¼ˆæœ‰åºæ’å…¥ï¼‰===\n");
     LinkList L = LinkList_init();
     
-    // ÂÒĞò²åÈë£¬Ó¦¸Ã×Ô¶¯ÅÅĞò
+    // ä¹±åºæ’å…¥ï¼Œåº”è¯¥è‡ªåŠ¨æ’åº
     LinkList_insert(L, 5);
     LinkList_insert(L, 3);
     LinkList_insert(L, 8);
     LinkList_insert(L, 1);
     LinkList_insert(L, 6);
     
-    printf("²åÈë 5,3,8,1,6 ºó: ");
+    printf("æ’å…¥ 5,3,8,1,6 å: ");
     LinkList_print(L);
-    printf("ÆÚÍû½á¹û: 1-->3-->5-->6-->8-->NULL\n\n");
+    printf("æœŸæœ›ç»“æœ: 1-->3-->5-->6-->8-->NULL\n\n");
     
     LinkList_free(L);
 }
 
 void test_delete() {
-    printf("=== ²âÊÔ3: É¾³ı²Ù×÷ ===\n");
+    printf("=== æµ‹è¯•3: åˆ é™¤æ“ä½œ ===\n");
     LinkList L = LinkList_init();
     
-    // ÏÈ²åÈëÒ»Ğ©Êı¾İ
+    // å…ˆæ’å…¥ä¸€äº›æ•°æ®
     for (int i = 1; i <= 5; i++) {
         LinkList_insert(L, i * 10);
     }
     
-    printf("³õÊ¼Á´±í: ");
+    printf("åˆå§‹é“¾è¡¨: ");
     LinkList_print(L);
     
-    // É¾³ıµÚÒ»¸ö½Úµã (idx=0)
+    // åˆ é™¤ç¬¬ä¸€ä¸ªèŠ‚ç‚¹ (idx=0)
     LinkList_delete(L, 0);
-    printf("É¾³ı idx=0 ºó: ");
+    printf("åˆ é™¤ idx=0 å: ");
     LinkList_print(L);
-    printf("ÆÚÍû: 20-->30-->40-->50-->NULL\n");
+    printf("æœŸæœ›: 20-->30-->40-->50-->NULL\n");
     
-    // É¾³ıÖĞ¼ä½Úµã (idx=1)
+    // åˆ é™¤ä¸­é—´èŠ‚ç‚¹ (idx=1)
     LinkList_delete(L, 1);
-    printf("É¾³ı idx=1 ºó: ");
+    printf("åˆ é™¤ idx=1 å: ");
     LinkList_print(L);
-    printf("ÆÚÍû: 20-->40-->50-->NULL\n");
+    printf("æœŸæœ›: 20-->40-->50-->NULL\n");
     
-    // É¾³ı×îºóÒ»¸ö½Úµã (idx=2)
+    // åˆ é™¤æœ€åä¸€ä¸ªèŠ‚ç‚¹ (idx=2)
     LinkList_delete(L, 2);
-    printf("É¾³ı idx=2 ºó: ");
+    printf("åˆ é™¤ idx=2 å: ");
     LinkList_print(L);
-    printf("ÆÚÍû: 20-->40-->NULL\n");
+    printf("æœŸæœ›: 20-->40-->NULL\n");
     
-    // É¾³ıÔ½½çË÷Òı (Ó¦¸Ã²»¸Ä±äÁ´±í)
+    // åˆ é™¤è¶Šç•Œç´¢å¼• (åº”è¯¥ä¸æ”¹å˜é“¾è¡¨)
     LinkList_delete(L, 100);
-    printf("É¾³ı idx=100(Ô½½ç)ºó: ");
+    printf("åˆ é™¤ idx=100(è¶Šç•Œ)å: ");
     LinkList_print(L);
-    printf("ÆÚÍû: 20-->40-->NULL\n\n");
+    printf("æœŸæœ›: 20-->40-->NULL\n\n");
     
     LinkList_free(L);
 }
 
 void test_delete_empty() {
-    printf("=== ²âÊÔ4: É¾³ı¿ÕÁ´±í ===\n");
+    printf("=== æµ‹è¯•4: åˆ é™¤ç©ºé“¾è¡¨ ===\n");
     LinkList L = LinkList_init();
     
-    printf("¿ÕÁ´±í: ");
+    printf("ç©ºé“¾è¡¨: ");
     LinkList_print(L);
     
     LinkList_delete(L, 0);
-    printf("É¾³ı idx=0 ºó: ");
+    printf("åˆ é™¤ idx=0 å: ");
     LinkList_print(L);
-    printf("ÆÚÍû: NULL\n\n");
+    printf("æœŸæœ›: NULL\n\n");
     
     LinkList_free(L);
 }
 
 void test_reverse() {
-    printf("=== ²âÊÔ5: ·´×ªÁ´±í ===\n");
+    printf("=== æµ‹è¯•5: åè½¬é“¾è¡¨ ===\n");
     LinkList L = LinkList_init();
     
-    // ²åÈëÊı¾İ
+    // æ’å…¥æ•°æ®
     LinkList_insert(L, 1);
     LinkList_insert(L, 2);
     LinkList_insert(L, 3);
     LinkList_insert(L, 4);
     LinkList_insert(L, 5);
     
-    printf("·´×ªÇ°: ");
+    printf("åè½¬å‰: ");
     LinkList_print(L);
-    printf("ÆÚÍû: 1-->2-->3-->4-->5-->NULL\n");
+    printf("æœŸæœ›: 1-->2-->3-->4-->5-->NULL\n");
     
     LinkList_reverse(L);
-    printf("·´×ªºó: ");
+    printf("åè½¬å: ");
     LinkList_print(L);
-    printf("ÆÚÍû: 5-->4-->3-->2-->1-->NULL\n\n");
+    printf("æœŸæœ›: 5-->4-->3-->2-->1-->NULL\n\n");
     
     LinkList_free(L);
 }
 
 void test_reverse_empty() {
-    printf("=== ²âÊÔ6: ·´×ª¿ÕÁ´±í ===\n");
+    printf("=== æµ‹è¯•6: åè½¬ç©ºé“¾è¡¨ ===\n");
     LinkList L = LinkList_init();
     
-    printf("·´×ªÇ°: ");
+    printf("åè½¬å‰: ");
     LinkList_print(L);
     
     LinkList_reverse(L);
-    printf("·´×ªºó: ");
+    printf("åè½¬å: ");
     LinkList_print(L);
-    printf("ÆÚÍû: NULL\n\n");
+    printf("æœŸæœ›: NULL\n\n");
     
     LinkList_free(L);
 }
 
 void test_single_node() {
-    printf("=== ²âÊÔ7: µ¥½Úµã²Ù×÷ ===\n");
+    printf("=== æµ‹è¯•7: å•èŠ‚ç‚¹æ“ä½œ ===\n");
     LinkList L = LinkList_init();
     
     LinkList_insert(L, 42);
-    printf("²åÈëµ¥¸ö½Úµãºó: ");
+    printf("æ’å…¥å•ä¸ªèŠ‚ç‚¹å: ");
     LinkList_print(L);
-    printf("ÆÚÍû: 42-->NULL\n");
+    printf("æœŸæœ›: 42-->NULL\n");
     
     LinkList_delete(L, 0);
-    printf("É¾³ıºó: ");
+    printf("åˆ é™¤å: ");
     LinkList_print(L);
-    printf("ÆÚÍû: NULL\n\n");
+    printf("æœŸæœ›: NULL\n\n");
     
     LinkList_free(L);
 }
 
 void test_multiple_operations() {
-    printf("=== ²âÊÔ8: ×ÛºÏ²Ù×÷ ===\n");
+    printf("=== æµ‹è¯•8: ç»¼åˆæ“ä½œ ===\n");
     LinkList L = LinkList_init();
     
-    // ²åÈë
+    // æ’å…¥
     LinkList_insert(L, 10);
     LinkList_insert(L, 20);
     LinkList_insert(L, 30);
-    printf("²åÈë 10,20,30: ");
+    printf("æ’å…¥ 10,20,30: ");
     LinkList_print(L);
     
-    // É¾³ı
+    // åˆ é™¤
     LinkList_delete(L, 1);
-    printf("É¾³ı idx=1: ");
+    printf("åˆ é™¤ idx=1: ");
     LinkList_print(L);
     
-    // ÔÙ²åÈë
+    // å†æ’å…¥
     LinkList_insert(L, 15);
     LinkList_insert(L, 25);
-    printf("²åÈë 15,25: ");
+    printf("æ’å…¥ 15,25: ");
     LinkList_print(L);
     
-    // ·´×ª
+    // åè½¬
     LinkList_reverse(L);
-    printf("·´×ªºó: ");
+    printf("åè½¬å: ");
     LinkList_print(L);
     printf("\n");
     
@@ -169,36 +169,36 @@ void test_multiple_operations() {
 }
 
 void test_large_list() {
-    printf("=== ²âÊÔ9: ´ó¹æÄ£Á´±í ===\n");
+    printf("=== æµ‹è¯•9: å¤§è§„æ¨¡é“¾è¡¨ ===\n");
     LinkList L = LinkList_init();
     
-    // ²åÈë100¸öÔªËØ
+    // æ’å…¥100ä¸ªå…ƒç´ 
     for (int i = 100; i >= 1; i--) {
         LinkList_insert(L, i);
     }
     
-    printf("²åÈë100¸öÔªËØºóµÄÇ°10¸ö: ");
+    printf("æ’å…¥100ä¸ªå…ƒç´ åçš„å‰10ä¸ª: ");
     LinkList p = L->next;
     for (int i = 0; i < 10 && p; i++) {
         printf("%d-->", p->data);
         p = p->next;
     }
     printf("...\n");
-    printf("ÆÚÍû: 1-->2-->3-->...-->100-->NULL\n");
+    printf("æœŸæœ›: 1-->2-->3-->...-->100-->NULL\n");
     
-    // É¾³ıÒ»°ë
+    // åˆ é™¤ä¸€åŠ
     for (int i = 0; i < 50; i++) {
         LinkList_delete(L, 0);
     }
     
-    printf("É¾³ıÇ°50¸öºó: ");
+    printf("åˆ é™¤å‰50ä¸ªå: ");
     p = L->next;
     for (int i = 0; i < 10 && p; i++) {
         printf("%d-->", p->data);
         p = p->next;
     }
     printf("...\n");
-    printf("ÆÚÍû: 51-->52-->53-->...-->100-->NULL\n\n");
+    printf("æœŸæœ›: 51-->52-->53-->...-->100-->NULL\n\n");
     
     LinkList_free(L);
 }
@@ -214,6 +214,6 @@ int main() {
     test_multiple_operations();
     test_large_list();
     
-    printf("ËùÓĞ²âÊÔÍê³É£¡\n");
+    printf("æ‰€æœ‰æµ‹è¯•å®Œæˆï¼\n");
     return 0;
 }

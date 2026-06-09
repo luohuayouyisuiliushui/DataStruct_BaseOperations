@@ -76,6 +76,10 @@ enum status DLL_reverse(DLL* L) {
 	return OK;
 }
 enum status DLL_free(DLL L) {
+	if(!L){
+		 printf("当前链表为空,无法释放空间！\n");
+   		 return ERROR;
+	}
 	DLL pre = L;
 	DLL p = NULL;
 	do {
@@ -87,6 +91,10 @@ enum status DLL_free(DLL L) {
 	return OK;
 }
 void DLL_print(DLL L) {
+	if(!L){
+		 printf("当前链表为空，无法打印！\n");
+    		return;
+	}
 	DLL p = L->next;
 	while(p != L) {
 		printf("%d-->", p->val);

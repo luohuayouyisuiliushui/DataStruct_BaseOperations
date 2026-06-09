@@ -27,7 +27,6 @@ LinkList LinkList_delete(LinkList L, size_t idx){
 	if(!p || !p->next)	return L;
 	for(int i = 0; i < idx && p->next; i++){
 		p = p->next;
-		if(!p)	return NULL;
 	}
 	if(!p->next)	return L;
 	LinkList tmp = p->next;

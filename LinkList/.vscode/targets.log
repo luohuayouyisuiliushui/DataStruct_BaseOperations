@@ -1,0 +1,333 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.4.1
+# Built for Windows32
+# Copyright (C) 1988-2023 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Fri May 22 19:22:54 2026
+
+# Variables
+
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+SYSTEMDRIVE = C:
+# environment
+JAVA_HOME = C:\Program Files\Java\jdk-25
+# environment
+LC_ALL = C
+# environment
+USERPROFILE = C:\Users\wjl14
+# environment
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+# environment
+LOCALAPPDATA = C:\Users\wjl14\AppData\Local
+# environment
+OLLAMA_HOST = http://127.0.0.1:11434
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# environment
+VSCODE_CWD = C:\Users\wjl14\AppData\Local\Programs\Microsoft VS Code
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+SYSTEMROOT = C:\WINDOWS
+# environment
+PROCESSOR_LEVEL = 25
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# environment
+OLLAMA_REGISTRY = https://mirror.ghproxy.com/https://registry.ollama.ai
+# default
+MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
+# environment
+OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT = true
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_19784_MGUECJVUCTOJLIDL
+# environment
+COPILOT_OTEL_EXPORTER_TYPE = file
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\wjl14\AppData\Roaming\Code\CachedData\0958016b2af9f09bb4257e0df4a95e2f90590f9f
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = C:\Users\wjl14\AppData\Local\Temp
+# default
+.INCLUDE_DIRS := .
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# makefile
+MAKEFLAGS = pqrR
+# environment
+PYTHON_HOME = C:\Program Files\python
+# environment
+ONEDRIVE = C:\Users\wjl14\OneDrive
+# makefile
+CURDIR := d:/DataStruct/LinkList
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = file:///c%3A/Users/wjl14/.vscode/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.118.2026051522/translations/extensions/vscode.json-language-features.i18n.json
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+COPILOT_OTEL_FILE_EXPORTER_PATH = \\.\nul
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 19784
+# makefile (from 'Makefile', line 2)
+sources = LinkList.o test.o
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# environment
+VSCODE_NLS_CONFIG = {"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"C:\\Users\\wjl14\\AppData\\Local\\Programs\\Microsoft VS Code\\0958016b2a\\resources\\app\\out\\nls.messages.json","languagePack":{"translationsConfigFile":"C:\\Users\\wjl14\\AppData\\Roaming\\Code\\clp\\87788cb759b3faab7fe87de19549c933.zh-cn\\tcf.json","messagesFile":"C:\\Users\\wjl14\\AppData\\Roaming\\Code\\clp\\87788cb759b3faab7fe87de19549c933.zh-cn\\0958016b2af9f09bb4257e0df4a95e2f90590f9f\\nls.messages.json","corruptMarkerFile":"C:\\Users\\wjl14\\AppData\\Roaming\\Code\\clp\\87788cb759b3faab7fe87de19549c933.zh-cn\\corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"87788cb759b3faab7fe87de19549c933.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"C:\\Users\\wjl14\\AppData\\Roaming\\Code\\clp\\87788cb759b3faab7fe87de19549c933.zh-cn\\tcf.json","_cacheRoot":"C:\\Users\\wjl14\\AppData\\Roaming\\Code\\clp\\87788cb759b3faab7fe87de19549c933.zh-cn","_resolvedLanguagePackCoreLocation":"C:\\Users\\wjl14\\AppData\\Roaming\\Code\\clp\\87788cb759b3faab7fe87de19549c933.zh-cn\\0958016b2af9f09bb4257e0df4a95e2f90590f9f","_corruptedFile":"C:\\Users\\wjl14\\AppData\\Roaming\\Code\\clp\\87788cb759b3faab7fe87de19549c933.zh-cn\\corrupted.info"}
+# environment
+ONEDRIVECONSUMER = C:\Users\wjl14\OneDrive
+# default
+MAKE_HOST := Windows32
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := sh.exe
+# environment
+HOMEPATH = \Users\wjl14
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = C:\Program Files\python\;C:\Program Files\python\Scripts;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Users\wjl14\AppData\Local\Programs\Python\Python310\Scripts;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\wjl14\��ȱʡӦ��\Git\cmd;C:\Program Files\Java\jdk-25\bin;C:\Program Files\CMake\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\python;C:\Program Files\python\Scripts;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\wjl14\Downloads\platform-tools;D:\mysql-9.7.0-winx64\bin;C:\Program Files\java\jdk-25\bin;C:\msys64;C:\Program Files\Scripts\;C:\Program Files\;C:\Users\wjl14\AppData\Local\Microsoft\WindowsApps;C:\Users\wjl14\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\wjl14\AppData\Local\Programs\Ollama;C:\Users\wjl14\��ȱʡӦ��\cursor\resources\app\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2026.1.1\bin
+# environment
+COMPUTERNAME = Ĭ
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+PROMPT = $P$G
+# environment
+EFC_7236_3789132940 = 1
+# environment
+CHOCOLATEYLASTPATHUPDATE = 134087020012416727
+# environment
+INTELLIJ IDEA = C:\Program Files\JetBrains\IntelliJ IDEA 2026.1.1\bin
+# environment
+APPLICATION_INSIGHTS_NO_STATSBEAT = true
+# environment
+LOGONSERVER = \\Ĭ
+# environment
+USERNAME = wjl14
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# automatic
++F = $(notdir $+)
+# environment
+USERDOMAIN = Ĭ
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# environment
+EFC_7236_2283032206 = 1
+# makefile (from 'Makefile', line 1)
+.DEFAULT_GOAL = DS_LL 
+# default
+MAKE_VERSION := 4.4.1
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+USERDOMAIN_ROAMINGPROFILE = Ĭ
+# environment
+NUMBER_OF_PROCESSORS = 16
+# environment
+PUBLIC = C:\Users\Public
+# environment
+APPDATA = C:\Users\wjl14\AppData\Roaming
+# environment
+HOMEDRIVE = C:
+# environment
+COPILOT_OTEL_ENABLED = true
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+EFC_7236_1592913036 = 1
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = C:\Users\wjl14\AppData\Local\Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\f2f26270-1.120.0-main-sock
+# environment
+JAVA__HOME = C:\Program Files\java\jdk-25
+# environment
+EFC_7236_2775293581 = 1
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
+# environment
+EFC_7236_4126798990 = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs notintermediate shell-export archives jobserver output-sync load dospaths
+# environment
+PROCESSOR_REVISION = 7502
+# makefile (from 'Makefile', line 3)
+target = DS_LL
+# environment
+EFC_7236_1262719628 = 1
+# environment
+VSCODE_ESM_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD
+# variable set hash-table stats:
+# Load=113/1024=11%, Rehash=0, Collisions=16/142=11%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (key d:/DataStruct/LinkList, mtime 1779448970): 10 files, no impossibilities.
+
+# 10 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+%.o: %.c
+#  recipe to execute (from 'Makefile', line 5):
+	gcc -c $<  
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2026-05-20 22:27:40
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	- rm  $(target)
+	- rm -rf $(sources)
+
+DS_LL: LinkList.o test.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 7):
+	gcc $(sources) -o $@
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+LinkList.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+test.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=9/1024=1%, Rehash=0, Collisions=0/24=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 18 / storage = 129 B / avg = 7 B
+# current buf: size = 8174 B / used = 129 B / count = 18 / avg = 7 B
+
+# strcache performance: lookups = 28 / hit rate = 35%
+# hash-table stats:
+# Load=18/8192=0%, Rehash=0, Collisions=0/28=0%
+# Finished Make data base on Fri May 22 19:22:54 2026
+
+ 
