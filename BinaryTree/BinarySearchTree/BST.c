@@ -19,6 +19,10 @@ static BST findMin(BST* T) {
         curr = next;
         next = next->left;
     }
+    // [修改] 原: pre->left = NULL;
+    // 问题1: pre 可能为 NULL (当 (*T) 即最小节点时) 导致空指针崩溃
+    // 问题2: 丢失了最小节点的右子树 curr->right
+    // pre->left = NULL;
     if(pre) {
         pre->left = curr->right;
     } else {
@@ -39,6 +43,10 @@ static BST findMax(BST* T) {
         curr = next;
         next = next->right;
     }
+    // [修改] 原: pre->right = NULL;
+    // 问题1: pre 可能为 NULL (当 (*T) 即最大节点时) 导致空指针崩溃
+    // 问题2: 丢失了最大节点的左子树 curr->left
+    // pre->right = NULL;
     if(pre) {
         pre->right = curr->left;
     } else {
@@ -75,6 +83,10 @@ status BST_intsert(BST* T, ElemType e) {
             return FAILURE;
         }
     }
+    // [修改] 原: BST tmp = flag == L ? pre->left : pre->right; tmp = node;
+    // 问题: tmp 是局部指针副本，对 tmp 赋值不会修改树结构，新节点实际未挂入树中
+    // BST tmp = flag == L ? pre->left : pre->right;
+    // tmp = node;
     if(flag == L)
         pre->left = node;
     else
